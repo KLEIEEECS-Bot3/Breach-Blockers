@@ -1,0 +1,91 @@
+.documents-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.upload-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.documents-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.document-icon-container {
+  padding: 0.5rem;
+  background-color: var(--color-muted);
+  border-radius: 0.25rem;
+}
+
+.document-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.document-name {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.document-meta {
+  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+}
+
+.document-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.action-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--color-muted-foreground);
+}
+
+.empty-icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto 1rem;
+  opacity: 0.5;
+}
+
+.empty-subtitle {
+  font-size: 0.875rem;
+}

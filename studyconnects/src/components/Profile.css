@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fd;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #636365;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.welcome {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-logo {
+  background: white;
+  color: #020202;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Calendar Card */
+.calendar-card {
+  flex: 2; /* Make calendar take more space compared to right section */
+  min-width: 600px;
+  max-width: 900px;
+  height: auto;
+}
+
+/* FullCalendar adjustments */
+.fc {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Toolbar styling */
+.fc .fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #242425;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fc .fc-button {
+  background: #5e5d62 !important;
+  border: none !important;
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 6px !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fc .fc-button:hover {
+  background: #242428 !important;
+}
+
+/* Day cells */
+.fc .fc-daygrid-day {
+  min-height: 100px;
+  transition: 0.2s;
+}
+
+.fc .fc-daygrid-day:hover {
+  background: #f3f3ff;
+  cursor: pointer;
+}
+
+/* Events look */
+.fc-event {
+  background-color: #3b3a41 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 4px 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.fc-event:hover {
+  transform: scale(1.05);
+  background-color: #4d4d54 !important;
+}
+
+/* .fc {
+  font-family: Arial, sans-serif;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 16px;
+}
+
+.fc .fc-daygrid-day {
+  cursor: pointer;
+}
+
+.fc-event {
+  background-color: #5a4fcf !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 2px 4px;
+  font-size: 12px;
+} */
+
+
+.events {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.events li span {
+  font-weight: bold;
+  color: #0f0f11;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.session-card h3 {
+  margin: 10px 0;
+}
+
+.join-btn {
+  background: #050505;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #50835c;
+  font-weight: bold;
+}
+
+.link {
+  color: #151418;
+  cursor: pointer;
+}
+
+.live-card .status {
+  margin: 10px 0;
+  font-weight: bold;
+  height: 100px;
+}
+
+.no-live {
+  color: red;
+}
+
+.inactive-btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: not-allowed;
+}
+
+.invitations-card {
+  margin: 20px;
+}
+
+.invitation {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.invitation h3 {
+  margin: 5px 0;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.accept {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.decline {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

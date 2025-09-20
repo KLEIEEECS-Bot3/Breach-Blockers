@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+
+  /* Make sure body takes full viewport height */
+  min-height: 100vh;
+
+  /* Use flex to center or control layout if needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally center content */
+}
+
+/* Headings reset */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Container to constrain content width and center */
+.container {
+  width: 100%;          /* full width */
+  max-width: 1200px;    /* max width for large screens */
+  margin: 0 auto;       /* center container */
+  padding: 0 16px;      /* horizontal padding */
+  box-sizing: border-box; /* include padding in width */
+}
+.app-container {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.app-header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-card);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .header-info {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header-title {
+  margin-bottom: 0.5rem;
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.badge-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

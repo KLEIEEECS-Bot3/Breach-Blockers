@@ -1,0 +1,44 @@
+.action-buttons-content {
+  padding-top: 1.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .buttons-container {
+    flex-direction: row;
+  }
+}
+
+.action-button {
+  flex: 1;
+}
+
+.button-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.participants-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.participants-text {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.participants-icon {
+  height: 1rem;
+  width: 1rem;
+}
